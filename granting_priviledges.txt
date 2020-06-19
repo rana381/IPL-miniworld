@@ -1,0 +1,99 @@
+CREATE ROLE
+	Managers,
+    Owners,
+    Player_Board,
+    Players,
+    Cricket_Ground_Committee,
+    Auction_Committee,
+    Chairman,
+    Umpires,
+    Sponsors,
+    Broadcasters
+
+[2020-04-21 18:37:59] Connected
+ipl> use ipl
+[2020-04-21 18:37:59] completed in 12 ms
+ipl> GRANT all
+     on ipl.team
+     to Managers
+[2020-04-21 18:37:59] completed in 15 ms
+ipl> GRANT select
+     on ipl.coach
+     to Managers
+[2020-04-21 18:38:19] completed in 17 ms
+ipl> GRANT select
+     on ipl.sponsors, ipl.team,ipl.owner
+     to Managers
+ipl> GRANT select
+     on ipl.sponsors
+     to Managers
+[2020-04-21 18:39:16] completed in 15 ms
+ipl> GRANT select
+     on ipl.team
+     to Managers
+[2020-04-21 18:39:28] completed in 16 ms
+ipl> GRANT select
+     on ipl.owners
+     to Managers
+[2020-04-21 18:39:39] completed in 13 ms
+ipl> GRANT select
+     on ipl.player
+     to Player_Board
+[2020-04-21 18:39:58] completed in 12 ms
+ipl> GRANT all
+     on ipl.player
+     to Player_Board
+[2020-04-21 18:40:20] completed in 12 ms
+ipl> Players
+ipl> GRANT select
+     on ipl.player
+     to Players
+[2020-04-21 18:40:48] completed in 11 ms
+ipl> GRANT select
+     on ipl.team
+     to Players
+[2020-04-21 18:40:56] completed in 10 ms
+ipl> GRANT all
+     on ipl.cricketgrounds
+     to Cricket_Ground_Committee
+[2020-04-21 18:41:19] completed in 10 ms
+ipl> GRANT all
+     on ipl.homeground
+     to Cricket_Ground_Committee
+[2020-04-21 18:41:28] completed in 12 ms
+ipl> GRANT all
+     on ipl.auction
+     to Auction_Committee
+[2020-04-21 18:41:44] completed in 11 ms
+ipl> GRANT all
+     on ipl.player
+     to Auction_Committee
+[2020-04-21 18:41:48] completed in 13 ms
+ipl> GRANT all
+     on ipl.team
+     to Auction_Committee
+[2020-04-21 18:41:54] completed in 11 ms
+ipl> GRANT select
+     on ipl.officials
+     to Umpires
+[2020-04-21 18:42:18] completed in 19 ms
+ipl> GRANT select
+     on ipl.sponsors
+     to Sponsors
+[2020-04-21 18:42:35] completed in 14 ms
+ipl> GRANT select
+     on ipl.team
+     to Sponsors
+[2020-04-21 18:42:40] completed in 9 ms
+ipl> GRANT select
+     on ipl.broadcastchannel
+     to Broadcasters
+[2020-04-21 18:42:52] completed in 18 ms
+ipl> GRANT select
+     on ipl.commentators
+     to Broadcasters
+[2020-04-21 18:42:59] completed in 11 ms
+ipl> GRANT select
+     on ipl.commentatorsformatches
+     to Broadcasters
+[2020-04-21 18:43:06] completed in 11 ms

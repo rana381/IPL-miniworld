@@ -1,0 +1,7 @@
+CREATE TRIGGER playerAdd AFTER INSERT
+         ON ipl.player FOR EACH ROW
+         BEGIN
+             UPDATE ipl.team
+                 SET no_of_players = no_of_players +1
+             WHERE team_name = NEW.team_name;
+         END
